@@ -6,7 +6,7 @@ const MyImages = () => {
   const [images, setImages] = useState([]);
 
   const showImages = async () => {
-    let res = await fetch(`https://api.thecatapi.com/v1/images/?limit=10& `, {
+    let res = await fetch(`https://api.thecatapi.com/v1/images/?limit=20&`, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -17,17 +17,33 @@ const MyImages = () => {
     setImages(pictures);
   };
 
+  const HandleClick = async (image_id) => {
+    let response = await fetch(`https://api.thecatapi.com/v1/images/${image_id} `,{
+      method:"DELETE",
+      headers: {
+        Accept: "application/json",
+        "x-api-key": "709ca42e-10f2-465f-a296-07ffb1b5276a",
+      },
+    })
+    if(response.status === 200) {
+    showImages(images)
+  }
+  }
+
   useEffect(() => {
     showImages();
   }, []);
 
   return (
-    <div>
+    <div style={{width:"100vw"}}>
       <div>My images</div>
-      <Carousel autoPlay infiniteLoop width={700} thumbWidth={50}>
+      <Carousel autoPlay infiniteLoop width={500} thumbWidth={30}>
         {images.map((image) => (
-          <div style={{ marginTop: "30%" }}>
+          <div style={{ marginTop: "10%", height:"600px" }}>
             <img src={image.url} alt="Images" key={image.id}/>
+            <button style={{zIndex: "1"}} className="mt-5"
+            onClick={() => HandleClick(image.id)}
+            >Delete</button>
           </div>
         ))}
       </Carousel>

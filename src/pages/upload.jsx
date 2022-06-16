@@ -21,6 +21,7 @@ const Upload = () => {
     )
       .then((response) => response.json())
       .then((result) => {
+        alert("Image uploaded succesfully")
         console.log("Success:", result);
       })
       .catch((error) => {
