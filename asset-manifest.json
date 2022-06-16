@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/Cat-portal/static/js/main.8624e4c4.chunk.js",
+    "main.js.map": "/Cat-portal/static/js/main.8624e4c4.chunk.js.map",
+    "runtime-main.js": "/Cat-portal/static/js/runtime-main.196bf52d.js",
+    "runtime-main.js.map": "/Cat-portal/static/js/runtime-main.196bf52d.js.map",
+    "static/css/2.c0cdccd9.chunk.css": "/Cat-portal/static/css/2.c0cdccd9.chunk.css",
+    "static/js/2.c81415ba.chunk.js": "/Cat-portal/static/js/2.c81415ba.chunk.js",
+    "static/js/2.c81415ba.chunk.js.map": "/Cat-portal/static/js/2.c81415ba.chunk.js.map",
+    "index.html": "/Cat-portal/index.html",
+    "precache-manifest.89e8ba97cb1eed9e2b53579f4bcbcc19.js": "/Cat-portal/precache-manifest.89e8ba97cb1eed9e2b53579f4bcbcc19.js",
+    "service-worker.js": "/Cat-portal/service-worker.js",
+    "static/css/2.c0cdccd9.chunk.css.map": "/Cat-portal/static/css/2.c0cdccd9.chunk.css.map",
+    "static/js/2.c81415ba.chunk.js.LICENSE.txt": "/Cat-portal/static/js/2.c81415ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.196bf52d.js",
+    "static/css/2.c0cdccd9.chunk.css",
+    "static/js/2.c81415ba.chunk.js",
+    "static/js/main.8624e4c4.chunk.js"
+  ]
+}
