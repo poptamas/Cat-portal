@@ -35,7 +35,7 @@ const Upload = () => {
         style={{ height: "100vh" }}
       >
         <div
-          className="bg-dark pt-5 pl-5 pr-5 pb-4 rounded d-flex flex-column"
+          className="bg-dark pt-5 pl-5 pr-5 pb-4 rounded d-flex flex-column col col-sm-5"
           style={{ width: "50vw" }}
         >
           <label className="form-label align-self-center">
